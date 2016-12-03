@@ -7,16 +7,16 @@ DEFAULT_FONT = ('Helvetica', 14)
 
 
 def _place_widget(widget: tkinter.Widget, row: int, column: int, columnspan: int,  padx: int, pady: int, sticky: int):
-    widget.grid(
-        row=row, column=column, columnspan=columnspan, padx=padx, pady=pady,
-        sticky=sticky)
+    """Place widget on the windows (short hand for the grid command)"""
+    widget.grid(row=row, column=column, columnspan=columnspan, padx=padx, pady=pady, sticky=sticky)
 
 
 class GameDialog:
     def __init__(self):
+        """ This is the Game Setting Dialog """
         self.dialog_window = tkinter.Toplevel()
 
-        self._label_counter = 0
+        self._label_counter = 0  # Label counter for the the create label command
         self._create_label('Please set the game setting: ')
 
         labels = ['Rules: ', 'Rows: ', 'Columns: ', 'Starting Player: ',
@@ -32,14 +32,12 @@ class GameDialog:
 
         self._row_var = self._create_vars()
         self._create_menu(self._row_var, num_options, 2, 1)
-
         self._col_var = self._create_vars()
         self._create_menu(self._col_var, num_options, 3, 1)
 
         colors = ['Black', 'White']
         self._starting_var = self._create_vars()
         self._create_menu(self._starting_var, colors, 4, 1)
-
         self._top_left_var = self._create_vars()
         self._create_menu(self._top_left_var, colors, 5, 1)
 
@@ -57,16 +55,15 @@ class GameDialog:
         self.dialog_window.rowconfigure(3, weight=3)
         self.dialog_window.columnconfigure(1, weight=1)
 
-        self._ok_clicked = False
+        self.ok_clicked = False # Whether the ok clicked button was made
 
     def show(self) -> None:
+        """Window will appear"""
         self.dialog_window.grab_set()
         self.dialog_window.wait_window()
 
-    def was_ok_clicked(self) -> bool:
-        return self._ok_clicked
-
     def game_settings(self) -> []:
+        """Return the list of game setting"""
         rules = self._rules_var.get()
         rows = int(self._row_var.get())
         columns = int(self._col_var.get())
@@ -87,13 +84,16 @@ class GameDialog:
         return [rules, rows, columns, starting, top_left, winning]
 
     def _on_ok_button(self) -> None:
-        self._ok_clicked = True
+        """When the ok button is pressed, """
+        self.ok_clicked = True
         self.dialog_window.destroy()
 
     def _create_vars(self) -> tkinter.StringVar:
+        """Short hand to create a Tkinter String Variable"""
         return tkinter.StringVar(master=self.dialog_window)
 
     def _create_label(self, label: str) -> None:
+        """Create a label and place the label"""
         label = tkinter.Label(
             master=self.dialog_window, text=label,
             font=DEFAULT_FONT
@@ -102,6 +102,14 @@ class GameDialog:
         self._label_counter += 1
 
     def _create_menu(self, var: tkinter.StringVar, menu_list: [str], row: int, col: int):
+        """
+        Create a menu and place the menu
+        :param var: The Tkinter String Variable
+        :param menu_list: List of stuff for the menu
+        :param row: Row of the grids where the widget is placed
+        :param col: Column of the grids where the widget is placed
+        :return:
+        """
         var.set(menu_list[0])
         row_menu = tkinter.OptionMenu(
             self.dialog_window, var,
@@ -112,14 +120,14 @@ class GameDialog:
 class OthelloGameApplication:
     def __init__(self):
         self._root_window = tkinter.Tk()
-        self._root_window.withdraw()
+        self._root_window.withdraw() # This is so that the root windows doesn't pop up until the game dialog is done
 
         dialog = GameDialog()
         dialog.show()
         while True:
             rules, rows, columns, starting, top_left, winning = dialog.game_settings()
             self._game_state = GameState(rules, rows, columns, starting, top_left, winning)
-            if dialog.was_ok_clicked() is True:
+            if dialog.ok_clicked is True:
                 break
 
         self._model_state = OthelloGameModel.ModelState(
@@ -145,15 +153,18 @@ class OthelloGameApplication:
         self._ok_clicked = False
 
         self._root_window.update()
-        self._root_window.deiconify()
+        self._root_window.deiconify() # The root windows will now reappear
 
     def run(self):
+        """Main loop for the root window"""
         self._root_window.mainloop()
 
     def _on_canvas_resized(self, event: tkinter.Event) -> None:
+        """When the canvas is resized, redraw"""
         self._redraw()
 
     def _on_canvas_clicked(self, event: tkinter.Event) -> None:
+        """When the canvas is clicked, check if there is a valid move"""
         width = self._canvas.winfo_width()
         height = self._canvas.winfo_height()
 
@@ -170,7 +181,8 @@ class OthelloGameApplication:
 
         self._winner_dialog()
 
-    def _redraw(self):
+    def _redraw(self) -> None:
+        """Redraw whatever is on the main dialog"""
         rule = self._game_state.rule + ' '
 
         if self._game_state.turn == 1:
@@ -194,7 +206,13 @@ class OthelloGameApplication:
         for line in self._model_state.col_lines:
             self._draw_line('V', line)
 
-    def _draw_line(self, orientation: str, line: int):
+    def _draw_line(self, orientation: str, line: int) -> None:
+        """
+        Draw the line based on the orientation
+        :param orientation: Either horizontal or vertical
+        :param line: Fractional line point
+        :return:
+        """
         canvas_width = self._canvas.winfo_width()
         canvas_height = self._canvas.winfo_height()
 
@@ -205,21 +223,23 @@ class OthelloGameApplication:
             x = line * canvas_width
             self._canvas.create_line(x, 0, x, canvas_height)
 
-    def _draw_disc(self, disc: OthelloGameModel.Disc):
+    def _draw_disc(self, disc: OthelloGameModel.Disc) -> None:
+        """Draw discs on the canvas"""
         canvas_width = self._canvas.winfo_width()
         canvas_height = self._canvas.winfo_height()
 
         center_x, center_y = disc.center_point.pixel(canvas_width, canvas_height)
 
-        x_distance = int(self._model_state.x_distance * canvas_width)
-        y_distance = int(self._model_state.y_distance * canvas_height)
+        x_distance = int((self._model_state.x_distance - 0.0005) * canvas_width)
+        y_distance = int((self._model_state.y_distance - 0.0005) * canvas_height)
 
         self._canvas.create_oval(
             center_x - x_distance, center_y - y_distance,
             center_x + x_distance, center_y + y_distance,
             fill=disc.fill, outline='#c0cde0')
 
-    def _load_discs(self):
+    def _load_discs(self) -> None:
+        """Load disc into the canvas"""
         board = self._game_state.board
         for piece in board.list_of_pieces():
             row, col = piece.location
@@ -228,7 +248,8 @@ class OthelloGameApplication:
             center_point = point.from_frac(col_frac, row_frac)
             self._model_state.add_disc(center_point, piece)
 
-    def _winner_dialog(self):
+    def _winner_dialog(self) -> None:
+        """The dialog when the game ends"""
         if self._game_state.ending_condition_met():
             winner_dialog = tkinter.Toplevel()
 
@@ -243,6 +264,7 @@ class OthelloGameApplication:
             _place_widget(ok_button, 0, 0, 1, 10, 10, tkinter.E)
 
     def _error_dialog(self):
+        """Dialog for the Invalid Move Error"""
         error_dialog = tkinter.Toplevel()
 
         winner = tkinter.Label(master=error_dialog, text='Invalid Move', font=DEFAULT_FONT)
