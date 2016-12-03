@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/OthelloGameView.py" line="20" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddcb855a-c8eb-4b81-b298-93d1b85bdb95" name="Default" comment="" />
+    <list default="true" id="ddcb855a-c8eb-4b81-b298-93d1b85bdb95" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OthelloGameModel.py" afterPath="$PROJECT_DIR$/OthelloGameModel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OthelloGameView.py" afterPath="$PROJECT_DIR$/OthelloGameView.py" />
+    </list>
     <ignored path="Othello_Game_Logic.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,19 +31,16 @@
       <file leaf-file-name="OthelloGameLogic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OthelloGameLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="345" column="71" selection-start-line="345" selection-start-column="71" selection-end-line="345" selection-end-column="71" />
+            <state relative-caret-position="529">
+              <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="false" />
                 <element signature="e#221#293#0" expanded="false" />
                 <element signature="e#335#390#0" expanded="false" />
-                <element signature="e#410#939#0" expanded="false" />
                 <element signature="e#410#517#1" expanded="false" />
                 <element signature="e#677#939#0" expanded="false" />
-                <element signature="e#963#3827#0" expanded="false" />
                 <element signature="e#1106#1310#0" expanded="false" />
                 <element signature="e#1364#2521#0" expanded="false" />
-                <element signature="e#2592#2947#0" expanded="false" />
                 <element signature="e#3034#3505#0" expanded="false" />
                 <element signature="e#3563#3621#0" expanded="false" />
                 <element signature="e#3672#3827#0" expanded="false" />
@@ -43,7 +48,6 @@
                 <element signature="e#4551#4861#0" expanded="false" />
                 <element signature="e#4885#4957#1" expanded="false" />
                 <element signature="e#6080#7392#0" expanded="false" />
-                <element signature="e#7446#8157#0" expanded="false" />
                 <element signature="e#8197#8866#0" expanded="false" />
                 <element signature="e#8909#8980#0" expanded="false" />
                 <element signature="e#9033#9248#0" expanded="false" />
@@ -60,8 +64,8 @@
       <file leaf-file-name="point.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/point.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+            <state relative-caret-position="294">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#360#533#0" expanded="false" />
                 <element signature="e#603#935#0" expanded="false" />
@@ -72,38 +76,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OthelloGameModel.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OthelloGameModel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OthelloGameModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#82#275#0" expanded="false" />
-                <element signature="e#294#1069#0" expanded="false" />
-                <element signature="e#405#572#0" expanded="false" />
-                <element signature="e#640#962#0" expanded="false" />
-                <element signature="e#1009#1069#0" expanded="false" />
-                <element signature="e#1110#1298#0" expanded="false" />
-                <element signature="e#1323#1951#0" expanded="false" />
-                <element signature="e#1376#1608#0" expanded="false" />
+                <element signature="e#82#439#0" expanded="false" />
+                <element signature="e#1680#1740#0" expanded="false" />
+                <element signature="e#1781#1969#0" expanded="false" />
+                <element signature="e#2582#2696#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OthelloGameView.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OthelloGameView.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OthelloGameView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="636">
+              <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#1013#1027#0" expanded="false" />
-                <element signature="e#1455#1769#0" expanded="false" />
-                <element signature="e#1834#2186#0" expanded="false" />
-                <element signature="e#2251#2721#0" expanded="false" />
-                <element signature="e#2758#3129#0" expanded="false" />
+                <element signature="e#2147#2217#0" expanded="false" />
+                <element signature="e#2265#2288#0" expanded="false" />
+                <element signature="e#2333#2845#0" expanded="false" />
+                <element signature="e#2892#2952#0" expanded="false" />
+                <element signature="e#3011#3062#0" expanded="false" />
+                <element signature="e#3121#3342#0" expanded="false" />
+                <element signature="e#3442#3627#0" expanded="false" />
+                <element signature="e#4906#4934#0" expanded="false" />
+                <element signature="e#5008#5022#0" expanded="false" />
+                <element signature="e#5580#6404#0" expanded="false" />
+                <element signature="e#6469#6821#0" expanded="false" />
+                <element signature="e#6886#7402#0" expanded="false" />
+                <element signature="e#7439#7810#0" expanded="false" />
+                <element signature="e#7850#8522#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -118,6 +127,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -125,8 +137,8 @@
         <option value="$PROJECT_DIR$/console.py" />
         <option value="$PROJECT_DIR$/point.py" />
         <option value="$PROJECT_DIR$/OthelloGameLogic.py" />
-        <option value="$PROJECT_DIR$/OthelloGameModel.py" />
         <option value="$PROJECT_DIR$/OthelloGameView.py" />
+        <option value="$PROJECT_DIR$/OthelloGameModel.py" />
       </list>
     </option>
   </component>
@@ -390,18 +402,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12215759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711306" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998413" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.402854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4017758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -453,11 +465,265 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="105" />
+      <option name="time" value="128" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/OthelloGameLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#221#293#0" expanded="false" />
+            <element signature="e#335#390#0" expanded="false" />
+            <element signature="e#410#517#1" expanded="false" />
+            <element signature="e#677#939#0" expanded="false" />
+            <element signature="e#1106#1310#0" expanded="false" />
+            <element signature="e#1364#2521#0" expanded="false" />
+            <element signature="e#3034#3505#0" expanded="false" />
+            <element signature="e#3563#3621#0" expanded="false" />
+            <element signature="e#3672#3827#0" expanded="false" />
+            <element signature="e#3882#4486#0" expanded="false" />
+            <element signature="e#4551#4861#0" expanded="false" />
+            <element signature="e#4885#4957#1" expanded="false" />
+            <element signature="e#6080#7392#0" expanded="false" />
+            <element signature="e#8197#8866#0" expanded="false" />
+            <element signature="e#8909#8980#0" expanded="false" />
+            <element signature="e#9033#9248#0" expanded="false" />
+            <element signature="e#9310#9621#0" expanded="false" />
+            <element signature="e#9691#10077#0" expanded="false" />
+            <element signature="e#10135#10890#0" expanded="false" />
+            <element signature="e#10965#11594#0" expanded="false" />
+            <element signature="e#12195#13504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#360#533#0" expanded="false" />
+            <element signature="e#603#935#0" expanded="false" />
+            <element signature="e#996#1219#0" expanded="false" />
+            <element signature="e#1304#1681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#82#439#0" expanded="false" />
+            <element signature="e#1680#1740#0" expanded="false" />
+            <element signature="e#1781#1969#0" expanded="false" />
+            <element signature="e#2582#2696#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#2147#2217#0" expanded="false" />
+            <element signature="e#2265#2288#0" expanded="false" />
+            <element signature="e#2333#2845#0" expanded="false" />
+            <element signature="e#2892#2952#0" expanded="false" />
+            <element signature="e#3011#3062#0" expanded="false" />
+            <element signature="e#3121#3342#0" expanded="false" />
+            <element signature="e#3442#3627#0" expanded="false" />
+            <element signature="e#4906#4934#0" expanded="false" />
+            <element signature="e#5008#5022#0" expanded="false" />
+            <element signature="e#5580#6404#0" expanded="false" />
+            <element signature="e#6469#6821#0" expanded="false" />
+            <element signature="e#6886#7402#0" expanded="false" />
+            <element signature="e#7439#7810#0" expanded="false" />
+            <element signature="e#7850#8522#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7216">
+          <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#221#293#0" expanded="false" />
+            <element signature="e#335#390#0" expanded="false" />
+            <element signature="e#410#517#1" expanded="false" />
+            <element signature="e#677#939#0" expanded="false" />
+            <element signature="e#1106#1310#0" expanded="false" />
+            <element signature="e#1364#2521#0" expanded="false" />
+            <element signature="e#3034#3505#0" expanded="false" />
+            <element signature="e#3563#3621#0" expanded="false" />
+            <element signature="e#3672#3827#0" expanded="false" />
+            <element signature="e#3882#4486#0" expanded="false" />
+            <element signature="e#4551#4861#0" expanded="false" />
+            <element signature="e#4885#4957#1" expanded="false" />
+            <element signature="e#6080#7392#0" expanded="false" />
+            <element signature="e#8197#8866#0" expanded="false" />
+            <element signature="e#8909#8980#0" expanded="false" />
+            <element signature="e#9033#9248#0" expanded="false" />
+            <element signature="e#9310#9621#0" expanded="false" />
+            <element signature="e#9691#10077#0" expanded="false" />
+            <element signature="e#10135#10890#0" expanded="false" />
+            <element signature="e#10965#11594#0" expanded="false" />
+            <element signature="e#12195#13504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#360#533#0" expanded="false" />
+            <element signature="e#603#935#0" expanded="false" />
+            <element signature="e#996#1219#0" expanded="false" />
+            <element signature="e#1304#1681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#82#439#0" expanded="false" />
+            <element signature="e#1680#1740#0" expanded="false" />
+            <element signature="e#1781#1969#0" expanded="false" />
+            <element signature="e#2582#2696#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#2147#2217#0" expanded="false" />
+            <element signature="e#2265#2288#0" expanded="false" />
+            <element signature="e#2333#2845#0" expanded="false" />
+            <element signature="e#2892#2952#0" expanded="false" />
+            <element signature="e#3011#3062#0" expanded="false" />
+            <element signature="e#3121#3342#0" expanded="false" />
+            <element signature="e#3442#3627#0" expanded="false" />
+            <element signature="e#4906#4934#0" expanded="false" />
+            <element signature="e#5008#5022#0" expanded="false" />
+            <element signature="e#5580#6404#0" expanded="false" />
+            <element signature="e#6469#6821#0" expanded="false" />
+            <element signature="e#6886#7402#0" expanded="false" />
+            <element signature="e#7439#7810#0" expanded="false" />
+            <element signature="e#7850#8522#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="345" column="71" selection-start-line="345" selection-start-column="71" selection-end-line="345" selection-end-column="71" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#221#293#0" expanded="false" />
+            <element signature="e#335#390#0" expanded="false" />
+            <element signature="e#410#517#1" expanded="false" />
+            <element signature="e#677#939#0" expanded="false" />
+            <element signature="e#1106#1310#0" expanded="false" />
+            <element signature="e#1364#2521#0" expanded="false" />
+            <element signature="e#3034#3505#0" expanded="false" />
+            <element signature="e#3563#3621#0" expanded="false" />
+            <element signature="e#3672#3827#0" expanded="false" />
+            <element signature="e#3882#4486#0" expanded="false" />
+            <element signature="e#4551#4861#0" expanded="false" />
+            <element signature="e#4885#4957#1" expanded="false" />
+            <element signature="e#6080#7392#0" expanded="false" />
+            <element signature="e#8197#8866#0" expanded="false" />
+            <element signature="e#8909#8980#0" expanded="false" />
+            <element signature="e#9033#9248#0" expanded="false" />
+            <element signature="e#9310#9621#0" expanded="false" />
+            <element signature="e#9691#10077#0" expanded="false" />
+            <element signature="e#10135#10890#0" expanded="false" />
+            <element signature="e#10965#11594#0" expanded="false" />
+            <element signature="e#12195#13504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding>
+            <element signature="e#360#533#0" expanded="false" />
+            <element signature="e#603#935#0" expanded="false" />
+            <element signature="e#996#1219#0" expanded="false" />
+            <element signature="e#1304#1681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#82#439#0" expanded="false" />
+            <element signature="e#1680#1740#0" expanded="false" />
+            <element signature="e#1781#1969#0" expanded="false" />
+            <element signature="e#2582#2696#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OthelloGameView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#2147#2217#0" expanded="false" />
+            <element signature="e#2265#2288#0" expanded="false" />
+            <element signature="e#2333#2845#0" expanded="false" />
+            <element signature="e#2892#2952#0" expanded="false" />
+            <element signature="e#3011#3062#0" expanded="false" />
+            <element signature="e#3121#3342#0" expanded="false" />
+            <element signature="e#3442#3627#0" expanded="false" />
+            <element signature="e#4906#4934#0" expanded="false" />
+            <element signature="e#5008#5022#0" expanded="false" />
+            <element signature="e#5580#6404#0" expanded="false" />
+            <element signature="e#6469#6821#0" expanded="false" />
+            <element signature="e#6886#7402#0" expanded="false" />
+            <element signature="e#7439#7810#0" expanded="false" />
+            <element signature="e#7850#8522#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OthelloGameLogic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2508">
@@ -466,13 +732,10 @@
             <element signature="n#!!doc" expanded="false" />
             <element signature="e#221#293#0" expanded="false" />
             <element signature="e#335#390#0" expanded="false" />
-            <element signature="e#410#939#0" expanded="false" />
             <element signature="e#410#517#1" expanded="false" />
             <element signature="e#677#939#0" expanded="false" />
-            <element signature="e#963#3827#0" expanded="false" />
             <element signature="e#1106#1310#0" expanded="false" />
             <element signature="e#1364#2521#0" expanded="false" />
-            <element signature="e#2592#2947#0" expanded="false" />
             <element signature="e#3034#3505#0" expanded="false" />
             <element signature="e#3563#3621#0" expanded="false" />
             <element signature="e#3672#3827#0" expanded="false" />
@@ -480,7 +743,6 @@
             <element signature="e#4551#4861#0" expanded="false" />
             <element signature="e#4885#4957#1" expanded="false" />
             <element signature="e#6080#7392#0" expanded="false" />
-            <element signature="e#7446#8157#0" expanded="false" />
             <element signature="e#8197#8866#0" expanded="false" />
             <element signature="e#8909#8980#0" expanded="false" />
             <element signature="e#9033#9248#0" expanded="false" />
@@ -512,14 +774,10 @@
           <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#82#275#0" expanded="false" />
-            <element signature="e#294#1069#0" expanded="false" />
-            <element signature="e#405#572#0" expanded="false" />
-            <element signature="e#640#962#0" expanded="false" />
-            <element signature="e#1009#1069#0" expanded="false" />
-            <element signature="e#1110#1298#0" expanded="false" />
-            <element signature="e#1323#1951#0" expanded="false" />
-            <element signature="e#1376#1608#0" expanded="false" />
+            <element signature="e#82#439#0" expanded="false" />
+            <element signature="e#1680#1740#0" expanded="false" />
+            <element signature="e#1781#1969#0" expanded="false" />
+            <element signature="e#2582#2696#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -530,11 +788,20 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#1013#1027#0" expanded="false" />
-            <element signature="e#1455#1769#0" expanded="false" />
-            <element signature="e#1834#2186#0" expanded="false" />
-            <element signature="e#2251#2721#0" expanded="false" />
-            <element signature="e#2758#3129#0" expanded="false" />
+            <element signature="e#2147#2217#0" expanded="false" />
+            <element signature="e#2265#2288#0" expanded="false" />
+            <element signature="e#2333#2845#0" expanded="false" />
+            <element signature="e#2892#2952#0" expanded="false" />
+            <element signature="e#3011#3062#0" expanded="false" />
+            <element signature="e#3121#3342#0" expanded="false" />
+            <element signature="e#3442#3627#0" expanded="false" />
+            <element signature="e#4906#4934#0" expanded="false" />
+            <element signature="e#5008#5022#0" expanded="false" />
+            <element signature="e#5580#6404#0" expanded="false" />
+            <element signature="e#6469#6821#0" expanded="false" />
+            <element signature="e#6886#7402#0" expanded="false" />
+            <element signature="e#7439#7810#0" expanded="false" />
+            <element signature="e#7850#8522#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -547,13 +814,10 @@
             <element signature="n#!!doc" expanded="false" />
             <element signature="e#221#293#0" expanded="false" />
             <element signature="e#335#390#0" expanded="false" />
-            <element signature="e#410#939#0" expanded="false" />
             <element signature="e#410#517#1" expanded="false" />
             <element signature="e#677#939#0" expanded="false" />
-            <element signature="e#963#3827#0" expanded="false" />
             <element signature="e#1106#1310#0" expanded="false" />
             <element signature="e#1364#2521#0" expanded="false" />
-            <element signature="e#2592#2947#0" expanded="false" />
             <element signature="e#3034#3505#0" expanded="false" />
             <element signature="e#3563#3621#0" expanded="false" />
             <element signature="e#3672#3827#0" expanded="false" />
@@ -561,7 +825,6 @@
             <element signature="e#4551#4861#0" expanded="false" />
             <element signature="e#4885#4957#1" expanded="false" />
             <element signature="e#6080#7392#0" expanded="false" />
-            <element signature="e#7446#8157#0" expanded="false" />
             <element signature="e#8197#8866#0" expanded="false" />
             <element signature="e#8909#8980#0" expanded="false" />
             <element signature="e#9033#9248#0" expanded="false" />
@@ -646,22 +909,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="1130" column="0" selection-start-line="1130" selection-start-column="0" selection-end-line="1130" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/point.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+        <state relative-caret-position="294">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#360#533#0" expanded="false" />
             <element signature="e#603#935#0" expanded="false" />
@@ -671,21 +925,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="2073" column="0" selection-start-line="2073" selection-start-column="0" selection-end-line="2073" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OthelloGameLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="345" column="71" selection-start-line="345" selection-start-column="71" selection-end-line="345" selection-end-column="71" />
+        <state relative-caret-position="529">
+          <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
             <element signature="e#221#293#0" expanded="false" />
             <element signature="e#335#390#0" expanded="false" />
-            <element signature="e#410#939#0" expanded="false" />
             <element signature="e#410#517#1" expanded="false" />
             <element signature="e#677#939#0" expanded="false" />
-            <element signature="e#963#3827#0" expanded="false" />
             <element signature="e#1106#1310#0" expanded="false" />
             <element signature="e#1364#2521#0" expanded="false" />
-            <element signature="e#2592#2947#0" expanded="false" />
             <element signature="e#3034#3505#0" expanded="false" />
             <element signature="e#3563#3621#0" expanded="false" />
             <element signature="e#3672#3827#0" expanded="false" />
@@ -693,7 +952,6 @@
             <element signature="e#4551#4861#0" expanded="false" />
             <element signature="e#4885#4957#1" expanded="false" />
             <element signature="e#6080#7392#0" expanded="false" />
-            <element signature="e#7446#8157#0" expanded="false" />
             <element signature="e#8197#8866#0" expanded="false" />
             <element signature="e#8909#8980#0" expanded="false" />
             <element signature="e#9033#9248#0" expanded="false" />
@@ -706,35 +964,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OthelloGameModel.py">
+    <entry file="file://$PROJECT_DIR$/OthelloGameView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="636">
+          <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#82#275#0" expanded="false" />
-            <element signature="e#294#1069#0" expanded="false" />
-            <element signature="e#405#572#0" expanded="false" />
-            <element signature="e#640#962#0" expanded="false" />
-            <element signature="e#1009#1069#0" expanded="false" />
-            <element signature="e#1110#1298#0" expanded="false" />
-            <element signature="e#1323#1951#0" expanded="false" />
-            <element signature="e#1376#1608#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#2147#2217#0" expanded="false" />
+            <element signature="e#2265#2288#0" expanded="false" />
+            <element signature="e#2333#2845#0" expanded="false" />
+            <element signature="e#2892#2952#0" expanded="false" />
+            <element signature="e#3011#3062#0" expanded="false" />
+            <element signature="e#3121#3342#0" expanded="false" />
+            <element signature="e#3442#3627#0" expanded="false" />
+            <element signature="e#4906#4934#0" expanded="false" />
+            <element signature="e#5008#5022#0" expanded="false" />
+            <element signature="e#5580#6404#0" expanded="false" />
+            <element signature="e#6469#6821#0" expanded="false" />
+            <element signature="e#6886#7402#0" expanded="false" />
+            <element signature="e#7439#7810#0" expanded="false" />
+            <element signature="e#7850#8522#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OthelloGameView.py">
+    <entry file="file://$PROJECT_DIR$/OthelloGameModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="327">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#1013#1027#0" expanded="false" />
-            <element signature="e#1455#1769#0" expanded="false" />
-            <element signature="e#1834#2186#0" expanded="false" />
-            <element signature="e#2251#2721#0" expanded="false" />
-            <element signature="e#2758#3129#0" expanded="false" />
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#82#439#0" expanded="false" />
+            <element signature="e#1680#1740#0" expanded="false" />
+            <element signature="e#1781#1969#0" expanded="false" />
+            <element signature="e#2582#2696#0" expanded="false" />
           </folding>
         </state>
       </provider>
