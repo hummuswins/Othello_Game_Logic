@@ -120,7 +120,7 @@ class GameDialog:
 class OthelloGameApplication:
     def __init__(self):
         self._root_window = tkinter.Tk()
-        self._root_window.withdraw() # This is so that the root windows doesn't pop up until the game dialog is done
+        self._root_window.withdraw()  # This is so that the root windows doesn't pop up until the game dialog is done
 
         dialog = GameDialog()
         dialog.show()
@@ -141,6 +141,7 @@ class OthelloGameApplication:
 
         self._canvas.bind('<Configure>', self._on_canvas_resized)
         self._canvas.bind('<Button-1>', self._on_canvas_clicked)
+        self._canvas.bind('<Enter>', self._hover)
 
         self._canvas.grid(
             row=0, column=0, columnspan=2, padx=0, pady=0,
@@ -168,11 +169,10 @@ class OthelloGameApplication:
         width = self._canvas.winfo_width()
         height = self._canvas.winfo_height()
 
-        click_point = point.from_pixel(
-            event.x, event.y, width, height)
+        click_point = point.from_pixel(event.x, event.y, width, height)
 
         move = self._model_state.handle_click(click_point)
-        if move is not None:
+        if move:
             try:
                 self._game_state.move(move)
                 self._redraw()
@@ -181,7 +181,16 @@ class OthelloGameApplication:
 
         self._winner_dialog()
 
-    def _redraw(self) -> None:
+    def _hover(self, event:tkinter.Event):
+        width = self._canvas.winfo_width()
+        height = self._canvas.winfo_height()
+        p = point.from_pixel(event.x, event.y, width, height)
+        move = self._model_state.handle_click(p)
+        possible_moves = self._game_state.full_possible_moves()
+        if move in possible_moves:
+            self._redraw(location=move)
+
+    def _redraw(self, location=None) -> None:
         """Redraw whatever is on the main dialog"""
         rule = self._game_state.rule + ' '
 
@@ -200,7 +209,8 @@ class OthelloGameApplication:
         self._canvas.delete(tkinter.ALL)
         self._load_discs()
         for disc in self._model_state.discs:
-            self._draw_disc(disc)
+            if disc.game_piece.color != 0 or disc.game_piece.location == location:
+                self._draw_disc(disc)
         for line in self._model_state.row_lines:
             self._draw_line('H', line)
         for line in self._model_state.col_lines:
@@ -232,7 +242,8 @@ class OthelloGameApplication:
 
         x_distance = int((self._model_state.x_distance - 0.0005) * canvas_width)
         y_distance = int((self._model_state.y_distance - 0.0005) * canvas_height)
-
+        if disc.game_piece.color == 0:
+            disc.fill = '#DCDCDC'
         self._canvas.create_oval(
             center_x - x_distance, center_y - y_distance,
             center_x + x_distance, center_y + y_distance,
@@ -273,8 +284,7 @@ class OthelloGameApplication:
         button_frame = tkinter.Frame(master=error_dialog)
         _place_widget(button_frame, 1, 0, 1, 10, 10, tkinter.E)
 
-        ok_button = tkinter.Button(master=button_frame, text='OK',
-                                   font=DEFAULT_FONT, command=error_dialog.destroy)
+        ok_button = tkinter.Button(master=button_frame, text='OK', font=DEFAULT_FONT, command=error_dialog.destroy)
         _place_widget(ok_button, 0, 0, 1, 10, 10, tkinter.E)
 
 

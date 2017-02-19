@@ -14,6 +14,8 @@ def _convert_color(color: int) -> str:
         return '#ffffff'
     elif color == OthelloGameLogic.NONE:
         return '#c0cde0'
+    elif color == 2:
+        return '#D3D3D3'
 
 
 class Disc:
