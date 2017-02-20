@@ -141,7 +141,6 @@ class OthelloGameApplication:
 
         self._canvas.bind('<Configure>', self._on_canvas_resized)
         self._canvas.bind('<Button-1>', self._on_canvas_clicked)
-        self._canvas.bind('<Enter>', self._hover)
 
         self._canvas.grid(
             row=0, column=0, columnspan=2, padx=0, pady=0,
@@ -154,7 +153,7 @@ class OthelloGameApplication:
         self._ok_clicked = False
 
         self._root_window.update()
-        self._root_window.deiconify() # The root windows will now reappear
+        self._root_window.deiconify()  # The root windows will now reappear
 
     def run(self):
         """Main loop for the root window"""
@@ -181,15 +180,6 @@ class OthelloGameApplication:
 
         self._winner_dialog()
 
-    def _hover(self, event:tkinter.Event):
-        width = self._canvas.winfo_width()
-        height = self._canvas.winfo_height()
-        p = point.from_pixel(event.x, event.y, width, height)
-        move = self._model_state.handle_click(p)
-        possible_moves = self._game_state.full_possible_moves()
-        if move in possible_moves:
-            self._redraw(location=move)
-
     def _redraw(self, location=None) -> None:
         """Redraw whatever is on the main dialog"""
         rule = self._game_state.rule + ' '
@@ -208,8 +198,13 @@ class OthelloGameApplication:
 
         self._canvas.delete(tkinter.ALL)
         self._load_discs()
+        if self._game_state.rule == 'FULL':
+            possible_moves = self._game_state.full_possible_moves()
+        else:
+            possible_moves = self._game_state.simple_possible_moves()
+
         for disc in self._model_state.discs:
-            if disc.game_piece.color != 0 or disc.game_piece.location == location:
+            if disc.game_piece.color != 0 or disc.game_piece.location in possible_moves:
                 self._draw_disc(disc)
         for line in self._model_state.row_lines:
             self._draw_line('H', line)
